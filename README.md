@@ -6,7 +6,7 @@ this is a clone of flipcart, flipcart is a ecomerce website , where you can shop
 
 ## Live Demo
 
-Explore the live demo: [Flipkart Clone](https://65ae17287f6077ff15dc0352--exquisite-duckanoo-929384.netlify.app/)
+Explore the live demo: [Flipkart Clone](https://65ae2dc3f20cd113cd76759e--mellow-malasada-f2d342.netlify.app/)
 ## Acknowledgements
 
 - Developed using [Visual Studio Code](https://code.visualstudio.com/).
@@ -95,7 +95,7 @@ To deploy this project, follow these steps:
    - in product i added filter  Functionality  
    - i add Functionality  to add product in cart
    - also added to remove products from cart
-   
+
 
 
 
