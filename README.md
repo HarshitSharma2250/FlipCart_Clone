@@ -6,7 +6,7 @@ this is a clone of flipcart, flipcart is a ecomerce website , where you can shop
 
 ## Live Demo
 
-Explore the live demo: [Flipkart Clone](https://65ae2dc3f20cd113cd76759e--mellow-malasada-f2d342.netlify.app/)
+Explore the live demo: [Flipkart Clone](https://65aeb52a4dab7b3a0094a54a--superlative-blini-198462.netlify.app/)
 ## Acknowledgements
 
 - Developed using [Visual Studio Code](https://code.visualstudio.com/).
