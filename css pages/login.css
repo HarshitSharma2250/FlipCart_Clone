@@ -1,4 +1,5 @@
-#sign_up_page{
+
+#login_page{
     margin: auto;
     margin-top: 5rem;
      display: flex;
@@ -10,7 +11,7 @@
    
    }
 
-   #sign_up_page .content_left_signupPage{
+   #login_page .content_left_signupPage{
     height:35rem;
     width:45%;
     min-width: 300px;
@@ -21,40 +22,40 @@ flex-direction: column;
 justify-content: space-around;
 align-items: center;
    }
-   #sign_up_page .content_left_signupPage .content_part h1{
+   #login_page .content_left_signupPage .content_part h1{
  margin-bottom: 2rem;
  margin-top: 2rem;
    }
-   #sign_up_page .content_left_signupPage .content_part h1,
-   #sign_up_page .content_left_signupPage .content_part h3{
+   #login_page .content_left_signupPage .content_part h1,
+   #login_page .content_left_signupPage .content_part h3{
     line-height: 1.6;
    }
 
 
-#sign_up_page .content_img .img{
+#login_page .content_img .img{
     background-image: url("https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/login_img_c4a81e.png");
     background-position: center 85%;
     background-repeat: no-repeat;
     height:20rem;
     width: 300px;
 }
-#sign_up_page .content_right_signupPage{
+#login_page .content_right_signupPage{
 width:55%;
 min-width:350px;
 background-color: #fff;
 padding:3rem 2rem;
 }
 
-#sign_up_form label{
+#login_form label{
     font-size: large;
     font-weight: 600;
 }
-#sign_up_form input{
+#login_form input{
     width: 100%;
     margin-top: 6px;
     height: 2rem;
 }
-#sign_up_form #submit{
+#login_form #submit{
     cursor: pointer;
     background-color: rgb(255, 102, 0);
     color: #fff;
@@ -74,24 +75,24 @@ padding:3rem 2rem;
 }
 
 @media screen and (max-width:758px) {
-    #sign_up_page{
+    #login_page{
       width: fit-content;  
     }
-    #sign_up_page .content_left_signupPage{
+    #login_page .content_left_signupPage{
         display: none;
     } 
 }
 @media screen and (max-width:609px) {
-    #sign_up_page{
+    #login_page{
         margin-top: 7rem;
     }
 }
 @media screen and (max-width:418px) {
-    #sign_up_page{
+    #login_page{
         width: 90%;
 
     }
-    #sign_up_page .content_right_signupPage{
+    #login_page .content_right_signupPage{
         width:98%;
 min-width:0;
 background-color: #fff;

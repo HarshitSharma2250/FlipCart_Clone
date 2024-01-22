@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./css pages/Navbar.css">
+    <link rel="stylesheet" href="./css pages/mobile_tab.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
@@ -70,6 +71,12 @@
                               <span>sign up</span>
                           </a>
                       </div>
+                      <div class="show_after_login" style="display: none;">
+                        <a href="#">
+                           <span id="signup_afterLogin">log out ?</span>   
+                        <span id="change_content_afterLogIn">sign out</span>
+                        </a>
+                                       </div>
                   <div class="rewards">
                   <a href="#">
                   <img src="	https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/rewards-fbd212.svg" alt="">
@@ -113,9 +120,45 @@
       </section>
       <hr>
       <!-- navbar end--------------------------------------------------- -->
+      <section id="mobile_product_page" >
+        <div id="mobilecontent">
+          <div id="leftSide_brandsName">
+            <h2>Category</h2>
+            <div class="brands_heading">brands</div>
+            <div class="brands_name">
+<label >
+  <input type="checkbox">
+  <p>samsung</p>
+</label>
+<label >
+  <input type="checkbox">
+  <p>oneplus</p>
+</label>
+<label >
+  <input type="checkbox">
+  <p>Apple</p>
+</label>
+<label >
+  <input type="checkbox">
+  <p>realme</p>
+</label>
+<label >
+  <input type="checkbox">
+  <p>oppo</p>
+</label>
+    </div>
+          </div>
+          <div id="mobile_product_right_container">
+            <h3>Results</h3>
+<div id="mobile_product_content_right_side"></div>
+          </div>
+        </div>
+
+      </section>
    
     <section id="footer"> </section>
   </body>
   <script src="./js pages/NavBar.js"></script>
+  <script src="./js pages/mobile_tab.js"></script>
   <script src="nFooter.js"></script>
 </html>

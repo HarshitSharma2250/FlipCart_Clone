@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./css pages/Navbar.css">
+    <link rel="stylesheet" href="./css pages/Cart.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
@@ -70,6 +71,12 @@
                             <span>sign up</span>
                         </a>
                     </div>
+                    <div class="show_after_login" style="display: none;">
+                      <a href="#">
+                         <span id="signup_afterLogin">log out ?</span>   
+                      <span id="change_content_afterLogIn">sign out</span>
+                      </a>
+                                     </div>
                 <div class="rewards">
                 <a href="#">
                 <img src="	https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/rewards-fbd212.svg" alt="">
@@ -114,8 +121,15 @@
     <hr>
     <!-- navbar end--------------------------------------------------- -->
    
+<section id="cart_setion">
+<h1>Cart Items</h1>
+  <div id="Cart_Items"></div>
+</section>
+
+
     <section id="footer"> </section>
   </body>
   <script src="./js pages/NavBar.js"></script>
+  <script src="./js pages/Cart.js"></script>
   <script src="nFooter.js"></script>
 </html>

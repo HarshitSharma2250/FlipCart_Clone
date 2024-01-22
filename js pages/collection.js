@@ -51,7 +51,12 @@ let arr = [
         link: '/grocery.html'
     },
 ]
+
+
+
+
 arr.forEach(ele => {
+
     let collectionbox = document.createElement('div')
     collectionbox.id = 'collectionbox'
     let linkElement = document.createElement('a');
@@ -63,6 +68,7 @@ arr.forEach(ele => {
     linkElement.append(pic, name);
     collectionbox.append(linkElement)
     collection.appendChild(collectionbox)
+
 })
 
 let slideBar=[
