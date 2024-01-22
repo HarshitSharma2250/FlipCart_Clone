@@ -7,15 +7,25 @@ let logo = document.querySelector('.logo');
 let cart= document.getElementById('cart')
 
 
+let getuserdetails = JSON.parse(localStorage.getItem('userdetails'));
+
 // Retrieve istrue from local storage or default to true
-let istrue = JSON.parse(localStorage.getItem('istrue')) !== false;
+
+let istrue;
+
+if(Object.values(getuserdetails).length>0){
+   istrue=JSON.parse(localStorage.getItem('istrue'))!==false;
+}else{
+    istrue=JSON.parse(localStorage.getItem('istrue'))!==true;
+}
+
 
 logo.style.cursor = 'pointer';
 logo.addEventListener('click', () => {
     window.location.href = 'index.html';
 });
 
-let getuserdetails = JSON.parse(localStorage.getItem('userdetails'));
+
 
 let shortName = '';
 if (getuserdetails) {
