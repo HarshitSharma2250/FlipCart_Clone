@@ -77,7 +77,7 @@ mainContainer_topMobile.appendChild(div)
   right_topmobile_btn.addEventListener('click', function () {
     slideIndex = (slideIndex +1) % (carouselImages.length-3);
     console.log(slideIndex)
-    mainContainer_topMobile.style.transform = `translateX(-${slideIndex * 9.4}%)`;
+    mainContainer_topMobile.style.transform = `translateX(-${slideIndex * 100}px)`;
 });
 
 move_to_mobile_ele.addEventListener('click',()=>{
