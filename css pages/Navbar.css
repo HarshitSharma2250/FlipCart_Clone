@@ -146,20 +146,21 @@
       display: flex;
   }
   
-  #search_Navbar{
-    width:100%;
-    display: none;
-  }
+   .toogle_flipcart_logo{
+    display: flex;
+    align-items: center;
+    position: relative;
+      }
   
   #toogle_slider{
     display: none;
   }
   .toggle_label{
-    transform: translateX(50px);
+    right: 80%;
+    position: absolute;
     font-size: large;
     display: none;
   }
-  
   /*-------------- toogle slider------------- */
    .slidebar_context{
     position: absolute;
@@ -167,7 +168,7 @@
     top: 6.5rem;
     left: -100%;
     width: 250px;
-    height: 16rem;
+    height: 20rem;
     background-color: #fff;
     transition: .5s ease;
   }
@@ -180,6 +181,7 @@
   justify-content: space-around;
   align-items: center;
   font-size: 18px;
+ 
   }
   .slidebar_context>.username #User_name span{
   margin-left: 10px;
@@ -188,10 +190,18 @@
     width: 22px;
     height: 22px;
   } 
-  .slidebar_context li{
+  .slidebar_context ul li{
     margin: 30px 0px;
-    padding-left: 10px;
+    padding-left: 10px;  
   }
+  .slidebar_context ul li a{
+    display: flex;
+    align-items: center;
+  }
+  .slidebar_context ul li a img{
+    margin-right: 10px;
+  }
+
   /*-------------- toogle slider end------------- */
   
   @media screen and (max-width:900px) {
@@ -221,22 +231,19 @@
     #NavBar #become-a-seller{
      display: none;
     }
+    #navbar{
+      height: 6.4rem;
+    }
     #search_navbar {
-     display: none;
+    position: absolute;
+   transform: translate( 15px ,3rem);
+   width:90%;
     }
-    #search_Navbar{
-      width:100%;
-      display: flex;
-      margin-left: 15px;
-    }
+
     .toggle_label{
-    transform: translateX(20px);
-    font-size: large;
     display: block;
   }
-  /* .slidebar_context{
-    display: block;
-  } */
+
   #toogle_slider:checked ~ .slidebar_context{
     left: 0;
   }

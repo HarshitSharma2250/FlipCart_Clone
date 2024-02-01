@@ -11,25 +11,26 @@
        <!-- navbar -------------------------------------------------------->
        <section id="navbar">
         <div id="NavBar">
-
+           
             <!-- slider toogle          -->
-            <label for="toogle_slider" class="toggle_label">
-              <i class="fa fa-navicon "></i>
-            </label>
+     
             <input id="toogle_slider" type="checkbox" >
             <!-- slider content      -->
             <div class="slidebar_context">
             <div class="username">
              <p id="User_name">
               <i class="fa fa-user"></i>
-              <span id="login_content2">log in </span>
+              <span id="login_content2"><a href="./Login.html">log in </a></span>
              </p>
               <img src="https://seeklogo.com/images/F/flipkart-logo-F2525E4DDE-seeklogo.com.png" alt="">
             </div>
             <ul>
               
-              <li>  <img src="	https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/rewards-fbd212.svg" alt="">
+              <li>  <a href="#">
+                <img src="	https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/rewards-fbd212.svg" alt="">
                 <span>rewards</span>
+              </a>
+           
               </li>
               <li><a href="/Gift_Access.html">
                 <img src="	https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/giftCard-bd87e1.svg" alt="gofy access"><span>gift Access</span></a></li>
@@ -39,19 +40,29 @@
               <span>my orders</span>
               </a> </li>  
             
+             <li id="slidebarNabbar"> <a href="#">
+                <img src="	https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/orders-bfe8c4.svg" alt="">
+              <span>log out</span>
+              </a> </li>  
+            
             </ul>
             </div>
-            <!-- end toogle         -->
-            
-                <div class="logo">
-                    <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg" alt="logo">
-                </div>
+            <!-- this is combine toggle logo and flipcart logo  -->
+            <div class="toogle_flipcart_logo">
+                <label for="toogle_slider" class="toggle_label">
+                    <i class="fa fa-navicon "></i>
+                </label>
+                <!-- end toogle         -->
+                <!-- navbar start for laptop width --------------------- -->
+                    <div class="logo">
+                        <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg" alt="logo">
+                    </div>
+            </div>
                 
                 <div id="search_navbar">
                         <i class="fa fa-search"></i>
                         <input class="search-product" type="text" placeholder="search for Products ,Brands and More">
                 </div>
-                
                 <div id="loginhover">
                 <div id="login">
                 <a href="/login.html" target="_blank">
@@ -66,16 +77,16 @@
                 <div id="login_popup_page">
                     <div class="signup">
                         <a href="/Signup.html">
-                            <span >new customer ?</span>
-                            <span>sign up</span>
+      <span >new customer ?</span>
+         <span >sign up</span>
                         </a>
                     </div>
-                    <div class="show_after_login" style="display: none;">
-                      <a href="#">
-                         <span id="signup_afterLogin">log out ?</span>   
-                      <span id="change_content_afterLogIn">sign out</span>
-                      </a>
-                                     </div>
+     <div class="show_after_login" style="display: none;">
+     <a href="#">
+        <span id="signup_afterLogin">log out ?</span>   
+     <span id="change_content_afterLogIn">log out</span>
+     </a>
+                    </div>
                 <div class="rewards">
                 <a href="#">
                 <img src="	https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/rewards-fbd212.svg" alt="">
@@ -112,10 +123,7 @@
                     </a>
                 </div>
               </div>
-              <div id="search_Navbar">
-                <i class="fa fa-search"></i>
-                <input class="search-product" type="text" placeholder="search for Products ,Brands and More">
-            </div>
+
     </section>
     <hr>
     <!-- navbar end--------------------------------------------------- -->

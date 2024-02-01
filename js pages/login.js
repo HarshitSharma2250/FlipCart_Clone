@@ -11,10 +11,10 @@ form.addEventListener('submit', (e) => {
         alert('Please fill all boxes!');
     } else {
         if (Name.value.toLowerCase().trim() === userdetailforlogin.Name.toLowerCase().trim() && password.value.toLowerCase().trim() === userdetailforlogin.password.toLowerCase().trim()) {
-            login_content.innerHTML = userdetailforlogin.Name;
+            // login_content.innerHTML = userdetailforlogin.Name;
 
             // Update the flag in local storage
-            localStorage.setItem('istrue', JSON.stringify(true));
+            localStorage.setItem('istrue', JSON.stringify('authenticated'));
             window.location.href = 'index.html';
         }else{
             alert('please fill correct details')
@@ -22,5 +22,4 @@ form.addEventListener('submit', (e) => {
     }
 });
 
-let pk=JSON.parse(localStorage.getItem('istrue'))
-console.log(typeof(pk))
+

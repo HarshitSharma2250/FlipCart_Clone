@@ -1,8 +1,14 @@
 
-function displayCartItems() {
-    let cartItems = JSON.parse(localStorage.getItem('cartItems')) || {};
-    let cartContainer = document.getElementById('Cart_Items');
+let authenticated=JSON.parse(localStorage.getItem('istrue'))
+console.log(authenticated)
+if (authenticated!=='authenticated') {
+   window.location.href = 'login.html';
+}
 
+let cartItems = JSON.parse(localStorage.getItem('cartItems')) || {};
+
+function displayCartItems() {
+    let cartContainer = document.getElementById('Cart_Items');
     // Clear previous content
     cartContainer.innerHTML = '';
 

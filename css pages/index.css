@@ -1,5 +1,4 @@
 
-
 body {
     position: relative; /* Added to act as positioning context */
   }
@@ -57,105 +56,10 @@ cursor: pointer;
 width: 100%;
 }
 
-/* --------------------------top mobile product slide bar------------------ */
-
-#carosil_topMobiles {
-  position: relative;
-    width: 100%;
-    background-color: white;
-    overflow: hidden;
-  } 
-  #carosil_topMobiles .mainContainer {
-    display: flex;
-    height:auto;
-    width: 2700px;
-    overflow: auto;
-padding: 0 0rem;
-  }
-  #carosil_topMobiles .mainContainer::-webkit-scrollbar{
-    height: 2px; 
-    opacity: 0;
-  }
-  
-  #carosil_topMobiles .mobile_carouselImageContainer {
-    padding:1rem;
-    height:auto;
-    width:270px;
-    transition: transform 1s ease-in-out;
-    flex: 0 0 auto;
-    padding:.6rem;
-  }
-  #carosil_topMobiles .carouselHeading{
-    color: var(--mainColor);
-    margin: 1rem .8rem 1rem .8rem;
-    font-size: x-large;
-    display: flex;
-    justify-content: space-between;
-  }
-  #carosil_topMobiles .carouselHeading #move_to_mobile_ele{
-    cursor: pointer;
-    margin-right: 10px;
-    border-radius: 50%;
-    padding: 10px;
-    background-color: blue;
-    color: #fff;
-  }
-
-
-  #carosil_topMobiles .mobile_carouselImage{
-    height:60vh;
-    width:100%;
-    cursor: pointer;
-  }
-  #carosil_topMobiles .left_topmobile_btn {
-    position: absolute;
-    left: 2%;
-    top: 40%;
-    padding: 1.5rem 0.5rem;
-    font-size: 1.2rem;
-    opacity: 0.7;
-    color: var(--mainColor);
-    border: 1px solid var(--mainColor);
-    border-radius: 2px;
-    background-color: rgb(219, 219, 219);
-    border: 1px solid red;
-  }
-  #carosil_topMobiles .right_topmobile_btn {
-    position: absolute;
-    left: 95%;
-    top: 40%;
-    padding: 1.5rem 0.5rem;
-    font-size: 1.2rem;
-    opacity: 0.7;
-    border: 1px solid var(--mainColor);
-    border-radius: 2px;
-    color: var(--mainColor);
-    background-color: rgb(195, 195, 195);
-    border: 1px solid red;
-  }
-  #carosil_topMobiles .left_topmobile_btn:hover {
-    cursor: pointer;
-    opacity: 1;
-    transition: 1s ease-in-out;
-  }
-  #carosil_topMobiles .right_topmobile_btn:hover {
-    cursor: pointer;
-    opacity: 1;
-    transition: 1s ease-in-out;
-  }
-  
-
-
-
-
-
-
-
-
-
 @media screen and (max-width:1024px) {
     #collections {
         overflow: auto; /* Changed to 'auto' to enable scrolling */
+        scrollbar-width: thin
       }
       #single_top_slide_bar #leftbtn,
     #single_top_slide_bar #rightbtn {
@@ -165,31 +69,16 @@ padding: 0 0rem;
 
 
 @media screen and (max-width:768px){
-    #carosil_topMobiles{
-     width: 100%;
-    }
-    #carosil_topMobiles .right_topmoobile_btn{
-      left: 92%;
-    }
-    
-   }
-  @media screen and (max-width:640px){
-   #carosil_topMobiles{
-    width: 100%;
-   }
-   #carosil_topMobiles .right_topmoobile_btn{
-    left: 90%;
-   }
-  }
 
-
+  #collectionbox a img{
+    width: 30px;
+}
+#collectionbox p{
+   font-size: small;
+}
+   }
 @media screen and (max-width:609px){
     #collections {
     margin-top: 6.7rem;
     }
 }
-/* @media screen and (max-width:1000px) {
-    #collections{
-        overflow-x: auto;   
-    }
-} */

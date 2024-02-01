@@ -1,3 +1,16 @@
+
+
+ // Redirect to the login page----------------------------------------------------
+ let authenticated=JSON.parse(localStorage.getItem('istrue'))
+ console.log(authenticated)
+ if (authenticated!=='authenticated') {
+    window.location.href = 'login.html';
+}
+
+
+
+
+
 const brands_name = document.querySelectorAll('.brands_name input');
 let mobile_product_content_right_side = document.getElementById('mobile_product_content_right_side');
 let mobileproducts = [
@@ -27,10 +40,7 @@ let mobileproducts = [
     }
 ]
 
- // Redirect to the login page----------------------------------------------------
-    if (!istrue) {
-        window.location.href = 'login.html';
-    }
+
 
 
 
