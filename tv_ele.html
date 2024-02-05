@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="./css pages/Navbar.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
+  <style>
+    #tv_ele_main{
+      margin-top: 6rem;
+    }
+  </style>
   <body>
        <!-- navbar -------------------------------------------------------->
        <section id="navbar">
@@ -128,8 +133,43 @@
     <hr>
     <!-- navbar end--------------------------------------------------- -->
    
+<!-- -----------------main------------------------------------------- -->
+
+<section id="tv_ele_main">
+
+<div id="allfilters">
+  <div id="filter_cat">
+    <label for="ele_category">select by category : </label>
+  <select name="category" id="ele_category">
+<option value="">select</option>
+<option value="Laptops">Laptops</option>
+<option value="Audio">Audio</option>
+<option value="Televisions">Televisions</option>
+<option value="Gaming">Gaming</option>
+<option value="SmartHome">SmartHome</option>
+<option value="Accessories">Accessories</option>
+<option value="powerbank">powerbank</option>
+<option value="storage">storage</option>
+<option value="tablets">tablets</option>
+<option value="health&personalcare">health & personal care</option>
+  </select>
+  </div>
+<div id="prices_high_low">
+  <label id="lowToHigh">Price-Low to High</label>
+  <label id="highToLow">Price-High to Low</label>
+
+</div>
+
+
+</div>
+
+  <div id="tv_ele_products"></div>
+  <div id="tv_ele_companyNames"></div>
+</section>
+<!-- --------------------------footer------------------------------------------ -->
     <section id="footer"> </section>
   </body>
-  <!-- <script src="./js pages/NavBar.js"></script> -->
+  <script src="./js pages/NavBar.js"></script>
+  <script src="./js pages/tv_ele.js"></script>
   <script src="nFooter.js"></script>
 </html>

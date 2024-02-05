@@ -64,9 +64,9 @@ function displayProducts(products) {
         let p1 = document.createElement('p');
         p1.textContent = product.name;
         let p2 = document.createElement('p');
-        p2.innerHTML ="<span>price : </span>"+product.price;
+        p2.textContent ="price : "+product.price;
 
-        // Add a button for each item
+        // Add a button for each item----------------------------------------
         let addButton = document.createElement('button');
         addButton.textContent = 'Add to Cart';
         addButton.addEventListener('click', () => {
@@ -82,23 +82,21 @@ function displayProducts(products) {
 
 function addToCart(product) {
     let cartItems = JSON.parse(localStorage.getItem('cartItems')) || {};
-    
-    // If the product is already in the cart, increase the quantity
-    if (cartItems[product.name]) {
-        cartItems[product.name].quantity += 1;
-    } else {
-        // Otherwise, add the product to the cart with quantity 1
-        cartItems[product.name] = { 
-            product, 
-            quantity: 1, 
-            price: "price : " + product.price  // Add description to the cart item
+
+    if (cartItems[product.name] ) {
+        alert('Item is already in the cart!');
+    }  else{
+
+        cartItems[product.name] = {
+            ...product,
+            quantity: 1
         };
+            alert('Item added to cart!');
     }
+    
     // Update the cartItems in local storage
     localStorage.setItem('cartItems', JSON.stringify(cartItems));
-
-
-    alert('Item added to cart!');
+ 
 }
 
 
